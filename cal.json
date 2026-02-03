@@ -2,7 +2,8 @@
     "rewrites": [
         {
             "source": "/(,*)",
-            "destination": "/calculator.html"
+            "destination": "/cal.html"
         }
     ]
 }
+
