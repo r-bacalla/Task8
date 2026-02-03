@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+      
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+/*output design*/
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.output {
+    border-radius: 8px;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/*button design*/
+
+.span-two {
+    grid-column: span 2;
+}
+
+button.span-two {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+.equal {
+    grid-column: span 2;
+}
+
+button.op {
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    font-size: 30px ;
+}
+
+button.del {
+    background-color: red;
+    color: #000000 (255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button.equal {
+    background-color: green;
+    color: #000000 (255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+button {
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*button hover design*/
+
+
+
+button.span-two:hover {
+    background-color: #5c5959;
+}
+
+button.op:hover {
+    background-color: #5c5959; 
+}
+
+button.del:hover {
+    background-color: #200101;  
+}
+
+button.equal:hover {
+    background-color: rgb(1, 48, 1);
+}
+
+button:hover {
+    background-color: #1a1818;
+}
