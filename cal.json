@@ -1,3 +1,10 @@
-{ 
-    "builds": [{ "src": "cal.html", "use": "@vercel/static" }] 
+{
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "/calculator.html",
+            "permanent": false
+        }
+    ]
+
 }
